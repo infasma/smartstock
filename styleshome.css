@@ -1,0 +1,86 @@
+/* Reset some default browser styles */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Basic Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+}
+.header {
+    display: flex;
+}
+.header-left {
+    flex:none ;
+    background-color: #6323f8;
+    color: #fff;
+    width: 120px;
+    font-size: 12px;
+    padding: 20px;
+}
+
+.header-right {
+    flex: 1;
+    background-color: #5313e9;
+    color: #fff;
+    font-size: 15px;
+   
+    padding: 20px;
+    width: 150px;
+}
+   
+
+
+.dashboard-container {
+    display: flex;
+    height: 100vh;
+}
+
+.dashboard-sidebar {
+    background-color: #222;
+    color: #fff;
+    width: 120px;
+    padding: 20px;
+}
+
+.dashboard-sidebar h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.dashboard-list {
+    list-style: none;
+}
+
+.dashboard-item {
+    margin-bottom: 10px;
+}
+
+.dashboard-item a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    padding: 5px 0;
+    transition: background-color 0.3s;
+}
+
+.dashboard-item a:hover {
+    background-color: #444;
+}
+
+.dashboard-content {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+.item-detail {
+    display: none;
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
